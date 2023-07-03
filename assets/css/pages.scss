@@ -176,7 +176,7 @@
 	overflow: auto;
 	left: 0px;
 	background: rgba(35, 31, 32, 0.80);
-	padding-bottom: 30px;
+	padding-bottom: 100px;
 	z-index: 500;
 	&__inner {
 		opacity: 1;
@@ -266,7 +266,7 @@
 			font-size: 14px;
 			font-weight: 400;
 			color: $bl;
-			line-height: 1.6
+			line-height: 1.6;
 			box-shadow: none;
 			drop-shadow: none;
 		}
