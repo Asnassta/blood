@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Центр крови</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="glasses-icon" viewBox="0 0 32 32">
+			<g>
+				<circle cx="9.66536" cy="16.3333" r="4.33333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<circle cx="4.33333" cy="4.33333" r="4.33333" transform="matrix(-1 0 0 1 26.666 12)"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M2.66602 16H5.33268"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M29.332 16H26.6654" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M13.332 13.9999C13.6654 12.6666 14.6654 11.3333 15.9987 11.3333C17.332 11.3333 18.332 12.6666 18.6654 13.9999"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</g>
+		</symbol>
+	</svg>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="/" class="header__logo">
+						<img src="assets/images/logo.svg" alt="">
+					</a>
+					<div class="header__contact">
+						<div class="header__info">
+							<a href="tel:+74951222013">+7(495)122-20-13</a>
+							<span>8:30 - 14:00 (пн-пт)</span>
+						</div>
+						<div class="header__social social">
+							<a href="#" class="social__icon">
+								<img src="assets/images/vk-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/odn-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/tg-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/m-icon.svg" alt="">
+							</a>
+						</div>
+					</div>
+					<form action="#" class="header__search">
+						<input type="text" placeholder="Поиск">
+						<button type="submit">
+							<img src="assets/images/search.svg" alt="">
+						</button>
+					</form>
+					<a href="#" class="header__button">
+						<svg>
+							<use xlink:href="#glasses-icon"></use>
+						</svg>
+					</a>
+					<a href="#" class="header__burger">
+						<img src="assets/images/burger.svg" alt="">
+						<span>Меню</span>
+					</a>
+				</div>
+				<div class="header-menu">
+					<div class="header-menu__inner">
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/hospital.svg" alt="">
+								<span>О центре</span>
+							</a>
+							<div class="header-menu__dropdown">
+								<ul>
+									<li>
+										<a href="#" class="header-menu__link">Центр сегодня</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">История</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Администрация </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">О работниках </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Отзывы</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Экскурсии</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Обеспечение клиник</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Противодействие коррупции</a>
+									</li>
+								</ul>
+							</div>
+						</div><!--/header-menu__item-->
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/heart.svg" alt="">
+								<span>Донорам</span>
+							</a>
+							<div class="header-menu__dropdown">
+								<ul>
+									<li>
+										<a href="#" class="header-menu__link">Центр сегодня</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">История</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Администрация </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">О работниках </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Отзывы</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Экскурсии</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Обеспечение клиник</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Противодействие коррупции</a>
+									</li>
+								</ul>
+							</div>
+						</div><!--/header-menu__item-->
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/tube.svg" alt="">
+								<span>кафедра Трансфузиологии</span>
+							</a>
+							<div class="header-menu__dropdown">
+								<ul>
+									<li>
+										<a href="#" class="header-menu__link">Центр сегодня</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">История</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Администрация </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">О работниках </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Отзывы</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Экскурсии</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Обеспечение клиник</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Противодействие коррупции</a>
+									</li>
+								</ul>
+							</div>
+						</div><!--/header-menu__item-->
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/microphone.svg" alt="">
+								<span>Пресс-центр</span>
+							</a>
+						</div><!--/header-menu__item-->
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/handbag.svg" alt="">
+								<span>партнёрам</span>
+							</a>
+							<div class="header-menu__dropdown">
+								<ul>
+									<li>
+										<a href="#" class="header-menu__link">Центр сегодня</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">История</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Администрация </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">О работниках </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Отзывы</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Экскурсии</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Обеспечение клиник</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Противодействие коррупции</a>
+									</li>
+								</ul>
+							</div>
+						</div><!--/header-menu__item-->
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/pin.svg" alt="">
+								<span>Контакты</span>
+							</a>
+						</div><!--/header-menu__item-->
+					</div>
+				</div><!--/header-menu-->
+				<div class="mobile-menu">
+					<div class="header-menu">
+						<div class="header-menu__inner">
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/hospital.svg" alt="">
+									<span>О центре</span>
+								</a>
+								<div class="header-menu__dropdown">
+									<ul>
+										<li>
+											<a href="#" class="header-menu__link">Центр сегодня</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">История</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Администрация </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">О работниках </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Отзывы</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Экскурсии</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Обеспечение клиник</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Противодействие коррупции</a>
+										</li>
+									</ul>
+								</div>
+							</div><!--/header-menu__item-->
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/heart.svg" alt="">
+									<span>Донорам</span>
+								</a>
+								<div class="header-menu__dropdown">
+									<ul>
+										<li>
+											<a href="#" class="header-menu__link">Центр сегодня</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">История</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Администрация </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">О работниках </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Отзывы</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Экскурсии</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Обеспечение клиник</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Противодействие коррупции</a>
+										</li>
+									</ul>
+								</div>
+							</div><!--/header-menu__item-->
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/tube.svg" alt="">
+									<span>кафедра Трансфузиологии</span>
+								</a>
+								<div class="header-menu__dropdown">
+									<ul>
+										<li>
+											<a href="#" class="header-menu__link">Центр сегодня</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">История</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Администрация </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">О работниках </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Отзывы</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Экскурсии</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Обеспечение клиник</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Противодействие коррупции</a>
+										</li>
+									</ul>
+								</div>
+							</div><!--/header-menu__item-->
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/microphone.svg" alt="">
+									<span>Пресс-центр</span>
+								</a>
+							</div><!--/header-menu__item-->
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/handbag.svg" alt="">
+									<span>партнёрам</span>
+								</a>
+								<div class="header-menu__dropdown">
+									<ul>
+										<li>
+											<a href="#" class="header-menu__link">Центр сегодня</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">История</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Администрация </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">О работниках </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Отзывы</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Экскурсии</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Обеспечение клиник</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Противодействие коррупции</a>
+										</li>
+									</ul>
+								</div>
+							</div><!--/header-menu__item-->
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/pin.svg" alt="">
+									<span>Контакты</span>
+								</a>
+							</div><!--/header-menu__item-->
+						</div>
+					</div><!--/header-menu-->
+					<div class="mobile-menu__box">
+						<div class="header__info">
+							<span>8:30 - 14:00 (пн-пт)</span>
+						</div>
+						<div class="header__social social">
+							<a href="#" class="social__icon">
+								<img src="assets/images/vk-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/odn-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/tg-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/m-icon.svg" alt="">
+							</a>
+							<a href="#" class="header__button">
+								<svg>
+									<use xlink:href="#glasses-icon"></use>
+								</svg>
+							</a>
+						</div>
+						<form action="#" class="header__search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit">
+								<img src="assets/images/search.svg" alt="">
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header><!--/header-->
+		<main class="main">
+			<div class="breadcrumbs">
+				<div class="container">
+					<div class="breadcrumbs__inner">
+						<a href="#">Главная</a>
+						<a href="#">Пресс-центр</a>
+						<span>Центр крови сегодня</span>
+					</div>
+				</div>
+			</div><!--breadcrumbs-->
+			<section class="section photogallery">
+				<div class="container">
+					<h1 class="title title_main title_dblue mb-24">Размеры фото</h1>
+					<div class="photogallery__inner">
+						<div class="photogallery__photo">
+							<img src="assets/images/photogallery_1.png" alt="">
+							<div class="photogallery__photo-description">Фото: www.yandex.ru</div>
+						</div><!--photogallery__photo-->
+						<div class="photogallery__photo">
+							<img src="assets/images/photogallery_2.png" alt="">
+							<div class="photogallery__photo-description">Фото: www.yandex.ru</div>
+						</div><!--photogallery__photo-->
+						<div class="photogallery__photo photogallery__photo_three">
+							<img src="assets/images/photogallery_3.png" alt="">
+							<div class="photogallery__photo-description">Фото: www.yandex.ru</div>
+						</div><!--photogallery__photo-->
+						<div class="photogallery__photo photogallery__photo_three">
+							<img src="assets/images/photogallery_4.png" alt="">
+							<div class="photogallery__photo-description">Фото: www.yandex.ru</div>
+						</div><!--photogallery__photo-->
+						<div class="photogallery__photo photogallery__photo_three">
+							<img src="assets/images/photogallery_5.png" alt="">
+							<div class="photogallery__photo-description">Фото: www.yandex.ru</div>
+						</div><!--photogallery__photo-->
+						<div class="photogallery__photo photogallery__photo_three photogallery__photo_min">
+							<img src="assets/images/photogallery_6.png" alt="">
+							<div class="photogallery__photo-description">Фото: www.yandex.ru</div>
+						</div><!--photogallery__photo-->
+						<div class="photogallery__photo photogallery__photo_three photogallery__photo_min">
+							<img src="assets/images/photogallery_7.png" alt="">
+							<div class="photogallery__photo-description">Фото: www.yandex.ru</div>
+						</div><!--photogallery__photo-->
+						<div class="photogallery__photo photogallery__photo_three photogallery__photo_min">
+							<img src="assets/images/photogallery_8.png" alt="">
+							<div class="photogallery__photo-description">Фото: www.yandex.ru</div>
+						</div><!--photogallery__photo-->
+					</div>
+				</div>
+			</section><!--/photogallery-->
+			<section class="section">
+				<div class="container">
+					<div class="block">
+						<h1 class="title title_main title_dblue mb-16">Типографика</h1>
+					</div>
+					<div class="block">
+						<h1 class="title title_main mb-16">Заголовок H1</h1>
+						<h1 class="title title_main title_medium">Заголовок H1 (M)</h1>
+					</div>
+					<div class="block">
+						<h2 class="title title_middle mb-16">Заголовок H2</h2>
+						<h2 class="title title_middle title_medium">Заголовок H2 (M)</h2>
+					</div>
+					<div class="block">
+						<h3 class="title title_small mb-16">Заголовок H3</h3>
+						<h3 class="title title_small title_medium">Заголовок H3 (M)</h3>
+					</div>
+					<div class="block">
+						<h4 class="title title_min mb-16">Заголовок H4</h4>
+						<h4 class="title title_min title_medium">Заголовок H4 (M)</h4>
+					</div>
+					<div class="block">
+						<div class="text text_big">
+							<p>Lorem ipsum dolor sit amet consectetur. Tellus vel euismod sed eu consectetur mattis fringilla commodo. Ornare nibh cursus aliquam porttitor egestas leo molestie molestie aenean. Ullamcorper ut eget in justo pellentesque odio. Libero libero nunc blandit nascetur quis. Adipiscing tellus pellentesque a justo ultricies lectus duis amet maecenas. Quisque morbi bibendum diam quis cras in lacus enim. Sodales condimentum a augue ullamcorper sed auctor sed imperdiet euismod.</p>
+							<p class="text_bold">Lorem ipsum dolor sit amet consectetur. Tellus vel euismod sed eu consectetur mattis fringilla commodo. Ornare nibh cursus aliquam porttitor egestas leo molestie molestie aenean. Ullamcorper ut eget in justo pellentesque odio. Libero libero nunc blandit nascetur quis. Adipiscing tellus pellentesque a justo ultricies lectus duis amet maecenas. Quisque morbi bibendum diam quis cras in lacus enim. Sodales condimentum a augue ullamcorper sed auctor sed imperdiet euismod.</p>
+						</div>
+					</div>
+					<div class="block">
+						<div class="text text_middle">
+							<p>Lorem ipsum dolor sit amet consectetur. Tellus vel euismod sed eu consectetur mattis fringilla commodo. Ornare nibh cursus aliquam porttitor egestas leo molestie molestie aenean. Ullamcorper ut eget in justo pellentesque odio. Libero libero nunc blandit nascetur quis. Adipiscing tellus pellentesque a justo ultricies lectus duis amet maecenas. Quisque morbi bibendum diam quis cras in lacus enim. Sodales condimentum a augue ullamcorper sed auctor sed imperdiet euismod.</p>
+							<p class="text_bold">Lorem ipsum dolor sit amet consectetur. Tellus vel euismod sed eu consectetur mattis fringilla commodo. Ornare nibh cursus aliquam porttitor egestas leo molestie molestie aenean. Ullamcorper ut eget in justo pellentesque odio. Libero libero nunc blandit nascetur quis. Adipiscing tellus pellentesque a justo ultricies lectus duis amet maecenas. Quisque morbi bibendum diam quis cras in lacus enim. Sodales condimentum a augue ullamcorper sed auctor sed imperdiet euismod.</p>
+						</div>
+					</div>
+					<div class="block">
+						<div class="text">
+							<p>Lorem ipsum dolor sit amet consectetur. Tellus vel euismod sed eu consectetur mattis fringilla commodo. Ornare nibh cursus aliquam porttitor egestas leo molestie molestie aenean. Ullamcorper ut eget in justo pellentesque odio. Libero libero nunc blandit nascetur quis. Adipiscing tellus pellentesque a justo ultricies lectus duis amet maecenas. Quisque morbi bibendum diam quis cras in lacus enim. Sodales condimentum a augue ullamcorper sed auctor sed imperdiet euismod.</p>
+							<p class="text_bold">Lorem ipsum dolor sit amet consectetur. Tellus vel euismod sed eu consectetur mattis fringilla commodo. Ornare nibh cursus aliquam porttitor egestas leo molestie molestie aenean. Ullamcorper ut eget in justo pellentesque odio. Libero libero nunc blandit nascetur quis. Adipiscing tellus pellentesque a justo ultricies lectus duis amet maecenas. Quisque morbi bibendum diam quis cras in lacus enim. Sodales condimentum a augue ullamcorper sed auctor sed imperdiet euismod.</p>
+						</div>
+					</div>
+					<div class="block">
+						<div class="text text_small">
+							<p>Lorem ipsum dolor sit amet consectetur. Tellus vel euismod sed eu consectetur mattis fringilla commodo. Ornare nibh cursus aliquam porttitor egestas leo molestie molestie aenean. Ullamcorper ut eget in justo pellentesque odio. Libero libero nunc blandit nascetur quis. Adipiscing tellus pellentesque a justo ultricies lectus duis amet maecenas. Quisque morbi bibendum diam quis cras in lacus enim. Sodales condimentum a augue ullamcorper sed auctor sed imperdiet euismod.</p>
+							<p class="text_bold">Lorem ipsum dolor sit amet consectetur. Tellus vel euismod sed eu consectetur mattis fringilla commodo. Ornare nibh cursus aliquam porttitor egestas leo molestie molestie aenean. Ullamcorper ut eget in justo pellentesque odio. Libero libero nunc blandit nascetur quis. Adipiscing tellus pellentesque a justo ultricies lectus duis amet maecenas. Quisque morbi bibendum diam quis cras in lacus enim. Sodales condimentum a augue ullamcorper sed auctor sed imperdiet euismod.</p>
+						</div>
+					</div>
+					<div class="block">
+						<div class="text text_min">
+							<p>Lorem ipsum dolor sit amet consectetur. Tellus vel euismod sed eu consectetur mattis fringilla commodo. Ornare nibh cursus aliquam porttitor egestas leo molestie molestie aenean. Ullamcorper ut eget in justo pellentesque odio. Libero libero nunc blandit nascetur quis. Adipiscing tellus pellentesque a justo ultricies lectus duis amet maecenas. Quisque morbi bibendum diam quis cras in lacus enim. Sodales condimentum a augue ullamcorper sed auctor sed imperdiet euismod.</p>
+							<p class="text_bold">Lorem ipsum dolor sit amet consectetur. Tellus vel euismod sed eu consectetur mattis fringilla commodo. Ornare nibh cursus aliquam porttitor egestas leo molestie molestie aenean. Ullamcorper ut eget in justo pellentesque odio. Libero libero nunc blandit nascetur quis. Adipiscing tellus pellentesque a justo ultricies lectus duis amet maecenas. Quisque morbi bibendum diam quis cras in lacus enim. Sodales condimentum a augue ullamcorper sed auctor sed imperdiet euismod.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<h1 class="title title_main title_dblue mb-16">Информационные блоки</h1>
+					<div class="info-block">
+						<img src="assets/images/prescription.svg" alt="">
+						<div class="text text_big">
+							<p>Основная миссия Центра крови - бесперебойное обеспечение медицинских организаций компонентами донорской крови.</p>
+						</div>
+					</div><!--/info-block-->
+					<div class="info-block info-block_green">
+						<img src="assets/images/quote.svg" alt="">
+						<div class="info-block__content">
+							<div class="text text_big">
+								<p>Бескровным краска яркая нужна. Твоя же кровь и без того красна.</p>
+							</div>
+							<div class="info-block__autor text text_big text_bold">Уильям Шекспир</div>
+						</div>
+					</div><!--/info-block-->
+					<div class="info-block info-block_red">
+						<img src="assets/images/attention.svg" alt="">
+						<div class="text text_big">
+							<p>Информируем, что с 01 января 2023 года учреждение будет осуществлять предоставление донорскому контингенту компенсаций и выплат за совершенные донации крови и ее компонентов ТОЛЬКО по безналичному расчету.</p>
+							<p>Для получения выплат на банковскую карту просим вас заранее оформить информационное добровольное согласие, которое можно скачать здесь, и предоставить медицинским регистраторам Центра крови ФМБА России сведения о ваших банковских реквизитах.</p>
+						</div>
+					</div><!--/info-block-->
+				</div>	
+			</section>
+			<section class="section">
+				<div class="container">
+					<h2 class="title title_main title_dblue mb-16">Список</h2>
+				<div class="list">
+					<h3 class="title title_small mb-16">Нумерованный список</h3>
+					<ol class="text text_big">
+						<li>Достать ключ</li>
+						<li>Вставить ключ в замок</li>
+						<li>Повернуть ключ на два оборота</li>
+						<li>Достать ключ из замка</li>
+						<li>Открыть дверь</li>
+					</ol>
+				</div><!--/list-->
+				<div class="list list_dots">
+					<h3 class="title title_small mb-16">Маркированный список</h3>
+					<ul class="text text_big">
+						<li>жареное</li>
+						<li>острое</li>
+						<li>копченое</li>
+						<li>молочные продукты</li>
+					</ul>
+				</div><!--/list-->
+				<div class="list list_dots">
+					<h3 class="title title_small mb-16">Маркированный список 2 столбца</h3>
+					<div class="list__flex">
+						<ul class="list__col text text_big">
+							<li>жареное</li>
+							<li>острое</li>
+							<li>копченое</li>
+							<li>молочные продукты</li>
+						</ul>
+						<ul class="list__col text text_big">
+							<li>жареное</li>
+							<li>острое</li>
+							<li>копченое</li>
+							<li>молочные продукты</li>
+						</ul>
+					</div>
+				</div><!--/list-->
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<h2 class="title title_main title_dblue mb-24">Таблица</h2>
+					<div class="table">
+						<div class="table__inner">
+							<div class="table__header">
+								<div class="table__row">
+									<div class="table__col">Заголовок</div>
+									<div class="table__col">Заголовок</div>
+									<div class="table__col">Заголовок</div>
+									<div class="table__col">Заголовок</div>
+									<div class="table__col">Заголовок</div>
+									<div class="table__col">Заголовок</div>
+								</div>
+							</div>
+							<div class="table__content">
+								<div class="table__row">
+									<div class="table__col">Текст</div>
+									<div class="table__col">Текст</div>
+									<div class="table__col">Текст</div>
+									<div class="table__col">Текст</div>
+									<div class="table__col">Текст</div>
+									<div class="table__col">Текст</div>
+								</div>
+							</div>
+						</div>
+					</div><!--/table-->
+				</div>	
+			</section>
+			<section class="section">
+				<div class="container">
+					<h2 class="title title_main title_dblue mb-24">Инфорграфика</h2>
+					<div class="infographics">
+						<div class="infographics__item">
+							<img src="assets/images/cardioelectric.svg" alt="">
+							<div class="text text_middle">Вы должны быть здоровы</div>
+						</div><!--/infographics__item-->
+						<div class="infographics__item">
+							<img src="assets/images/right-user.svg" alt="">
+							<div class="text text_middle">Возрасте старше 18 лет</div>
+						</div><!--/infographics__item-->
+						<div class="infographics__item">
+							<img src="assets/images/industrial-scales.svg" alt="">
+							<div class="text text_middle">Вес более 50 кг</div>
+						</div><!--/infographics__item-->
+					</div><!--/infographics-->	
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__copyright">© Центр крови ФМБА России, 2012-2022</div>
+					<div class="footer__links">
+						<div class="social">
+							<a href="#" class="social__icon">
+								<img src="assets/images/vk-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/odn-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/tg-icon.svg" alt="">
+							</a>
+						</div><!--/social-->
+						<a href="#" class="footer__link">
+							<img src="assets/images/gos.svg" alt="">
+						</a>
+						<a href="#" class="footer__link">
+							<img src="assets/images/bloodservice.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__app">
+						<a href="#">
+							<img src="assets/images/googleplay.svg" alt="">
+						</a>
+						<a href="#">
+							<img src="assets/images/appstore.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	
+</body>
+</html>

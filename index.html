@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Центр крови</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="glasses-icon" viewBox="0 0 32 32">
+			<g>
+				<circle cx="9.66536" cy="16.3333" r="4.33333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<circle cx="4.33333" cy="4.33333" r="4.33333" transform="matrix(-1 0 0 1 26.666 12)"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M2.66602 16H5.33268"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M29.332 16H26.6654" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M13.332 13.9999C13.6654 12.6666 14.6654 11.3333 15.9987 11.3333C17.332 11.3333 18.332 12.6666 18.6654 13.9999"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</g>
+		</symbol>
+	</svg>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="/" class="header__logo">
+						<img src="assets/images/logo.svg" alt="">
+					</a>
+					<div class="header__contact">
+						<div class="header__info">
+							<a href="tel:+74951222013">+7(495)122-20-13</a>
+							<span>8:30 - 14:00 (пн-пт)</span>
+						</div>
+						<div class="header__social social">
+							<a href="#" class="social__icon">
+								<img src="assets/images/vk-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/odn-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/tg-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/m-icon.svg" alt="">
+							</a>
+						</div>
+					</div>
+					<form action="#" class="header__search">
+						<input type="text" placeholder="Поиск">
+						<button type="submit">
+							<img src="assets/images/search.svg" alt="">
+						</button>
+					</form>
+					<a href="#" class="header__button">
+						<svg>
+							<use xlink:href="#glasses-icon"></use>
+						</svg>
+					</a>
+					<a href="#" class="header__burger">
+						<img src="assets/images/burger.svg" alt="">
+						<span>Меню</span>
+					</a>
+				</div>
+				<div class="header-menu">
+					<div class="header-menu__inner">
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/hospital.svg" alt="">
+								<span>О центре</span>
+							</a>
+							<div class="header-menu__dropdown">
+								<ul>
+									<li>
+										<a href="#" class="header-menu__link">Центр сегодня</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">История</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Администрация </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">О работниках </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Отзывы</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Экскурсии</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Обеспечение клиник</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Противодействие коррупции</a>
+									</li>
+								</ul>
+							</div>
+						</div><!--/header-menu__item-->
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/heart.svg" alt="">
+								<span>Донорам</span>
+							</a>
+							<div class="header-menu__dropdown">
+								<ul>
+									<li>
+										<a href="#" class="header-menu__link">Центр сегодня</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">История</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Администрация </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">О работниках </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Отзывы</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Экскурсии</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Обеспечение клиник</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Противодействие коррупции</a>
+									</li>
+								</ul>
+							</div>
+						</div><!--/header-menu__item-->
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/tube.svg" alt="">
+								<span>кафедра Трансфузиологии</span>
+							</a>
+							<div class="header-menu__dropdown">
+								<ul>
+									<li>
+										<a href="#" class="header-menu__link">Центр сегодня</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">История</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Администрация </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">О работниках </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Отзывы</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Экскурсии</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Обеспечение клиник</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Противодействие коррупции</a>
+									</li>
+								</ul>
+							</div>
+						</div><!--/header-menu__item-->
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/microphone.svg" alt="">
+								<span>Пресс-центр</span>
+							</a>
+						</div><!--/header-menu__item-->
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/handbag.svg" alt="">
+								<span>партнёрам</span>
+							</a>
+							<div class="header-menu__dropdown">
+								<ul>
+									<li>
+										<a href="#" class="header-menu__link">Центр сегодня</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">История</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Администрация </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">О работниках </a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Отзывы</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Экскурсии</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Обеспечение клиник</a>
+									</li>
+									<li>
+										<a href="#" class="header-menu__link">Противодействие коррупции</a>
+									</li>
+								</ul>
+							</div>
+						</div><!--/header-menu__item-->
+						<div class="header-menu__item">
+							<a href="#" class="header-menu__name">
+								<img src="assets/images/pin.svg" alt="">
+								<span>Контакты</span>
+							</a>
+						</div><!--/header-menu__item-->
+					</div>
+				</div><!--/header-menu-->
+				<div class="mobile-menu">
+					<div class="header-menu">
+						<div class="header-menu__inner">
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/hospital.svg" alt="">
+									<span>О центре</span>
+								</a>
+								<div class="header-menu__dropdown">
+									<ul>
+										<li>
+											<a href="#" class="header-menu__link">Центр сегодня</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">История</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Администрация </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">О работниках </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Отзывы</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Экскурсии</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Обеспечение клиник</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Противодействие коррупции</a>
+										</li>
+									</ul>
+								</div>
+							</div><!--/header-menu__item-->
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/heart.svg" alt="">
+									<span>Донорам</span>
+								</a>
+								<div class="header-menu__dropdown">
+									<ul>
+										<li>
+											<a href="#" class="header-menu__link">Центр сегодня</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">История</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Администрация </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">О работниках </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Отзывы</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Экскурсии</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Обеспечение клиник</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Противодействие коррупции</a>
+										</li>
+									</ul>
+								</div>
+							</div><!--/header-menu__item-->
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/tube.svg" alt="">
+									<span>кафедра Трансфузиологии</span>
+								</a>
+								<div class="header-menu__dropdown">
+									<ul>
+										<li>
+											<a href="#" class="header-menu__link">Центр сегодня</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">История</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Администрация </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">О работниках </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Отзывы</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Экскурсии</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Обеспечение клиник</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Противодействие коррупции</a>
+										</li>
+									</ul>
+								</div>
+							</div><!--/header-menu__item-->
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/microphone.svg" alt="">
+									<span>Пресс-центр</span>
+								</a>
+							</div><!--/header-menu__item-->
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/handbag.svg" alt="">
+									<span>партнёрам</span>
+								</a>
+								<div class="header-menu__dropdown">
+									<ul>
+										<li>
+											<a href="#" class="header-menu__link">Центр сегодня</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">История</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Администрация </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">О работниках </a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Отзывы</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Экскурсии</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Обеспечение клиник</a>
+										</li>
+										<li>
+											<a href="#" class="header-menu__link">Противодействие коррупции</a>
+										</li>
+									</ul>
+								</div>
+							</div><!--/header-menu__item-->
+							<div class="header-menu__item">
+								<a href="#" class="header-menu__name">
+									<img src="assets/images/pin.svg" alt="">
+									<span>Контакты</span>
+								</a>
+							</div><!--/header-menu__item-->
+						</div>
+					</div><!--/header-menu-->
+					<div class="mobile-menu__box">
+						<div class="header__info">
+							<span>8:30 - 14:00 (пн-пт)</span>
+						</div>
+						<div class="header__social social">
+							<a href="#" class="social__icon">
+								<img src="assets/images/vk-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/odn-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/tg-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/m-icon.svg" alt="">
+							</a>
+							<a href="#" class="header__button">
+								<svg>
+									<use xlink:href="#glasses-icon"></use>
+								</svg>
+							</a>
+						</div>
+						<form action="#" class="header__search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit">
+								<img src="assets/images/search.svg" alt="">
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header><!--/header-->
+		<main class="main">
+			<section class="intro">
+				<div class="container">
+					<div class="intro__inner">
+						<div class="intro__info">
+							<h1 class="title title_main">Подари надежду на завтра – <br>стань донором!</h1>
+							<div class="intro__subtitle">Принимаем доноров без предварительной записи</div>
+							<a href="#" class="btn">
+								<img src="assets/images/like.svg" alt="">
+								<span>Стать донором</span>
+							</a>
+						</div>
+						<div class="intro__photo">
+							<img src="assets/images/hands.svg" alt="">
+						</div>
+					</div>
+				</div>	
+			</section><!--/intro-->
+			<section class="about">
+				<div class="container">
+					<div class="about__inner">
+						<div class="about__box">
+							<div class="about__info">
+								<h2 class="title title_middle title_medium">Как стать  <br>донором?</h2>
+								<a href="#" class="about__link">Подробнее</a>
+							</div>
+							<div class="about__photo">
+								<img src="assets/images/hand-send.svg" alt="">
+							</div>
+						</div><!--/about__box-->
+						<div class="about__box">
+							<div class="about__info">
+								<h2 class="title title_middle title_medium">Советы <br>донорам</h2>
+								<a href="#" class="about__link">Подробнее</a>
+							</div>
+							<div class="about__photo">
+								<img src="assets/images/girl.svg" alt="">
+							</div>
+						</div><!--/about__box-->
+						<div class="about__box">
+							<div class="about__info">
+								<h2 class="title title_middle title_medium">Кодекс  <br>донора</h2>
+								<a href="#" class="about__link">Подробнее</a>
+							</div>
+							<div class="about__photo">
+								<img src="assets/images/list.svg" alt="">
+							</div>
+						</div><!--/about__box-->
+						<div class="about__box about__box_big">
+							<h2 class="title title_middle title_medium">Донорский светофор</h2>
+							<div class="about__donor donor">
+								<div class="donor-light">
+									<div class="donor-light__block">
+										<div class="donor-light__box gray">0 (I)</div>
+										<div class="donor-light__box green">Rh+</div>
+										<div class="donor-light__box red">Rh-</div>
+									</div>
+									<div class="donor-light__block">
+										<div class="donor-light__box gray">A (II)</div>
+										<div class="donor-light__box green">Rh+</div>
+										<div class="donor-light__box yellow">Rh-</div>
+									</div>
+									<div class="donor-light__block">
+										<div class="donor-light__box gray">B (III)</div>
+										<div class="donor-light__box green">Rh+</div>
+										<div class="donor-light__box red">Rh-</div>
+									</div>
+									<div class="donor-light__block">
+										<div class="donor-light__box gray">AB (IV)</div>
+										<div class="donor-light__box green">Rh+</div>
+										<div class="donor-light__box red">Rh-</div>
+									</div>
+								</div>
+								<div class="donor-legend">
+									<div class="donor-legend__item">
+										<div class="donor-legend__circle green"></div>
+										<span>Достаточный запас крови данной группы </span>
+									</div>
+									<div class="donor-legend__item">
+										<div class="donor-legend__circle yellow"></div>
+										<span>Присутствует потребность в крови данной группы </span>
+									</div>
+									<div class="donor-legend__item">
+										<div class="donor-legend__circle red"></div>
+										<span>Повышенная потребность в крови данной группы  </span>
+									</div>
+									<div class="donor-legend__item">
+										<div class="donor-legend__circle white"></div>
+										<span>Нет экстренной потребности</span>
+									</div>
+								</div>
+							</div>
+						</div><!--/about__box-->
+						<div class="about__box">
+							<div class="about__info">
+								<h2 class="title title_middle title_medium">Корпоративное <br>донорство</h2>
+								<a href="#" class="about__link">Узнать больше</a>
+							</div>
+							<div class="about__photo">
+								<img src="assets/images/car.svg" alt="">
+							</div>
+						</div><!--/about__box-->
+					</div>
+				</div>
+			</section><!--/about-->
+			<div class="stat">
+				<div class="container">
+					<div class="stat__inner">
+						<div class="stat__item">
+							<div class="stat__number">1567</div>
+							<div class="stat__description">Совершено донаций<br>  в Центре крови</div>
+						</div><!--/stat__item-->
+						<div class="stat__item">
+							<div class="stat__number">42</div>
+							<div class="stat__description">Проведено выездных<br>  донорских акций</div>
+						</div><!--/stat__item-->
+						<div class="stat__item">
+							<div class="stat__number">322</div>
+							<div class="stat__description">Награждено Почетных доноров <br> России в Центре крови</div>
+						</div><!--/stat__item-->
+					</div>
+					<div class="stat__info">Данные за 2023 год</div>
+					<div class="stat__photo">
+						<img src="assets/images/people.svg" alt="">
+					</div>
+				</div>
+			</div><!--/stat-->
+			<section class="news bg-blue">
+				<div class="container">
+					<h2 class="title title_main">Новости</h2>
+					<div class="news__inner">
+						<a href="#" class="news__item">
+							<div class="news__photo">
+								<img src="assets/images/news-photo_1.png" alt="">
+							</div>
+							<div class="news__data">
+								<div class="news__data-date">01.11.2022</div>
+								<div class="news__data-stat">
+									<img src="assets/images/eye.svg" alt="">
+									<span>324</span>
+								</div>
+							</div>
+							<h3 class="title title_small title_medium">Присоединяйтесь к штабу акции помощи семьям военнослужащих </h3>
+						</a><!--/news__item-->
+						<a href="#" class="news__item">
+							<div class="news__photo">
+								<img src="assets/images/news-photo_2.png" alt="">
+							</div>
+							<div class="news__data">
+								<div class="news__data-date">01.11.2022</div>
+								<div class="news__data-stat">
+									<img src="assets/images/eye.svg" alt="">
+									<span>324</span>
+								</div>
+							</div>
+							<h3 class="title title_small title_medium">Режим работы Центра крови ФМБА России в ноябре</h3>
+						</a><!--/news__item-->
+						<a href="#" class="news__item">
+							<div class="news__photo">
+								<img src="assets/images/news-photo_3.png" alt="">
+							</div>
+							<div class="news__data">
+								<div class="news__data-date">01.11.2022</div>
+								<div class="news__data-stat">
+									<img src="assets/images/eye.svg" alt="">
+									<span>324</span>
+								</div>
+							</div>
+							<h3 class="title title_small title_medium">День донора состоялся на «Территории смыслов-2022»</h3>
+						</a><!--/news__item-->
+						<a href="#" class="news__item">
+							<div class="news__photo">
+								<img src="assets/images/news-photo_4.png" alt="">
+							</div>
+							<div class="news__data">
+								<div class="news__data-date">01.11.2022</div>
+								<div class="news__data-stat">
+									<img src="assets/images/eye.svg" alt="">
+									<span>324</span>
+								</div>
+							</div>
+							<h3 class="title title_small title_medium">В РусГидро прошла традиционная донорская акция</h3>
+						</a><!--/news__item-->
+						<a href="#" class="news__item">
+							<div class="news__photo">
+								<img src="assets/images/news-photo_5.png" alt="">
+							</div>
+							<div class="news__data">
+								<div class="news__data-date">01.11.2022</div>
+								<div class="news__data-stat">
+									<img src="assets/images/eye.svg" alt="">
+									<span>324</span>
+								</div>
+							</div>
+							<h3 class="title title_small title_medium">Центр крови ФМБА России первый день донора для сотрудников ЦПК</h3>
+						</a><!--/news__item-->
+						<a href="#" class="news__item">
+							<div class="news__photo">
+								<img src="assets/images/news-photo_6.png" alt="">
+							</div>
+							<div class="news__data">
+								<div class="news__data-date">01.11.2022</div>
+								<div class="news__data-stat">
+									<img src="assets/images/eye.svg" alt="">
+									<span>324</span>
+								</div>
+							</div>
+							<h3 class="title title_small title_medium">День донора – в сердце Москвы: донорская акция прошла на выставке...</h3>
+						</a><!--/news__item-->
+					</div>
+					<div class="news__btn">
+						<a href="#" class="btn">
+							<span>Все новости</span>
+							<img src="assets/images/arrow-right.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</section><!--/news-->
+			<section class="faq bg-dblue">
+				<div class="container">
+					<h2 class="title title_main">Часто задаваемые вопросы</h2>
+					<div class="faq__item">
+						<h3 class="faq__question title title_small">Как часто можно сдавать кровь и её компоненты?</h3>
+						<div class="faq__answer">
+							<div class="text text_big">Существуют разные виды донорства – донорство цельной крови и донорство компонентов. Мужчины могут сдавать цельную кровь не более 5 раз в год, женщины – не более 4 раз в год. После сдачи крови должно пройти не менее 60 дней, прежде чем донор сможет снова сдавать кровь. После сдачи крови должно пройти не менее 30 дней, прежде чем донор сможет сдавать плазму. После сдачи плазмы должно пройти не менее 14 дней, прежде чем донор сможет снова сдавать плазму или кровь.</div>
+							<div class="text text_big text_bold">В связи с тем, что банк плазмы нашего учреждения переполнен, врачи-трансфузиологи просят доноров плазмы соблюдать интервал между донациями не менее 1 месяца.</div>
+						</div>
+					</div><!--/faq__item-->
+					<div class="faq__item">
+						<h3 class="faq__question title title_small">Чем сдача крови отличается от сдачи плазмы?</h3>
+						<div class="faq__answer">
+							<div class="text text_big">Существуют разные виды донорства – донорство цельной крови и донорство компонентов. Мужчины могут сдавать цельную кровь не более 5 раз в год, женщины – не более 4 раз в год. После сдачи крови должно пройти не менее 60 дней, прежде чем донор сможет снова сдавать кровь. После сдачи крови должно пройти не менее 30 дней, прежде чем донор сможет сдавать плазму. После сдачи плазмы должно пройти не менее 14 дней, прежде чем донор сможет снова сдавать плазму или кровь.</div>
+							<div class="text text_big text_bold">В связи с тем, что банк плазмы нашего учреждения переполнен, врачи-трансфузиологи просят доноров плазмы соблюдать интервал между донациями не менее 1 месяца.</div>
+						</div>
+					</div><!--/faq__item-->
+					<div class="faq__item">
+						<h3 class="faq__question title title_small">Можно ли прийти прийти в учреждение службы крови без паспорта?</h3>
+						<div class="faq__answer">
+							<div class="text text_big">Существуют разные виды донорства – донорство цельной крови и донорство компонентов. Мужчины могут сдавать цельную кровь не более 5 раз в год, женщины – не более 4 раз в год. После сдачи крови должно пройти не менее 60 дней, прежде чем донор сможет снова сдавать кровь. После сдачи крови должно пройти не менее 30 дней, прежде чем донор сможет сдавать плазму. После сдачи плазмы должно пройти не менее 14 дней, прежде чем донор сможет снова сдавать плазму или кровь.</div>
+							<div class="text text_big text_bold">В связи с тем, что банк плазмы нашего учреждения переполнен, врачи-трансфузиологи просят доноров плазмы соблюдать интервал между донациями не менее 1 месяца.</div>
+						</div>
+					</div><!--/faq__item-->
+					<div class="faq__item">
+						<h3 class="faq__question title title_small">Может ли курильщик быть донором?</h3>
+						<div class="faq__answer">
+							<div class="text text_big">Существуют разные виды донорства – донорство цельной крови и донорство компонентов. Мужчины могут сдавать цельную кровь не более 5 раз в год, женщины – не более 4 раз в год. После сдачи крови должно пройти не менее 60 дней, прежде чем донор сможет снова сдавать кровь. После сдачи крови должно пройти не менее 30 дней, прежде чем донор сможет сдавать плазму. После сдачи плазмы должно пройти не менее 14 дней, прежде чем донор сможет снова сдавать плазму или кровь.</div>
+							<div class="text text_big text_bold">В связи с тем, что банк плазмы нашего учреждения переполнен, врачи-трансфузиологи просят доноров плазмы соблюдать интервал между донациями не менее 1 месяца.</div>
+						</div>
+					</div><!--/faq__item-->
+					<div class="faq__item">
+						<h3 class="faq__question title title_small">Как восстановить организм после сдачи крови?</h3>
+						<div class="faq__answer">
+							<div class="text text_big">Существуют разные виды донорства – донорство цельной крови и донорство компонентов. Мужчины могут сдавать цельную кровь не более 5 раз в год, женщины – не более 4 раз в год. После сдачи крови должно пройти не менее 60 дней, прежде чем донор сможет снова сдавать кровь. После сдачи крови должно пройти не менее 30 дней, прежде чем донор сможет сдавать плазму. После сдачи плазмы должно пройти не менее 14 дней, прежде чем донор сможет снова сдавать плазму или кровь.</div>
+							<div class="text text_big text_bold">В связи с тем, что банк плазмы нашего учреждения переполнен, врачи-трансфузиологи просят доноров плазмы соблюдать интервал между донациями не менее 1 месяца.</div>
+						</div>
+					</div><!--/faq__item-->
+				</div>
+			</section><!--/faq-->
+			<section class="partner bg-blue">
+				<div class="container">
+					<div class="partner__box">
+						<h2 class="title title_main title_medium">Наши партнёры</h2>
+						<div class="partner__inner">
+							<div class="partner__column">
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_1.svg" alt="">
+								</a><!--/partner__item-->
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_2.svg" alt="">
+								</a><!--/partner__item-->
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_3.svg" alt="">
+								</a><!--/partner__item-->
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_4.svg" alt="">
+								</a><!--/partner__item-->
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_5.svg" alt="">
+								</a><!--/partner__item-->
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_6.svg" alt="">
+								</a><!--/partner__item-->
+							</div><!--/partner__column-->
+							<div class="partner__photo">
+								<img src="assets/images/girl_2.svg" alt="">
+							</div>
+							<div class="partner__column">
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_7.svg" alt="">
+								</a><!--/partner__item-->
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_8.svg" alt="">
+								</a><!--/partner__item-->
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_9.svg" alt="">
+								</a><!--/partner__item-->
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_10.svg" alt="">
+								</a><!--/partner__item-->
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_11.svg" alt="">
+								</a><!--/partner__item-->
+								<a href="#" class="partner__item">
+									<img src="assets/images/partner_12.svg" alt="">
+								</a><!--/partner__item-->
+							</div><!--/partner__column-->
+						</div>
+					</div>
+				</div>
+			</section><!--/partner-->
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__copyright">© Центр крови ФМБА России, 2012-2022</div>
+					<div class="footer__links">
+						<div class="social">
+							<a href="#" class="social__icon">
+								<img src="assets/images/vk-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/odn-icon.svg" alt="">
+							</a>
+							<a href="#" class="social__icon">
+								<img src="assets/images/tg-icon.svg" alt="">
+							</a>
+						</div><!--/social-->
+						<a href="#" class="footer__link">
+							<img src="assets/images/gos.svg" alt="">
+						</a>
+						<a href="#" class="footer__link">
+							<img src="assets/images/bloodservice.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__app">
+						<a href="#">
+							<img src="assets/images/googleplay.svg" alt="">
+						</a>
+						<a href="#">
+							<img src="assets/images/appstore.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	
+</body>
+</html>
