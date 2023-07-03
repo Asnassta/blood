@@ -267,8 +267,9 @@
 			font-weight: 400;
 			color: $bl;
 			line-height: 1.6;
-			box-shadow: none;
-			drop-shadow: none;
+			box-shadow: none!important;
+			filter: drop-shadow(0 0 0 $wh);
+			appearance: none;
 		}
 		textarea {
 			height: 70px;
