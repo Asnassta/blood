@@ -136,5 +136,25 @@ $(document).ready(function() {
   });
 /*=======/page-slider========*/
 
+ /*========photo-slider========*/
+  new Swiper('.photo-slider__container', {
+    slidesPerView: 3,
+    spaceBetween: 32,
+    watchOverflow: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      547: {
+        slidesPerView: 3,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+    }
+  });
+/*=======/page-slider========*/
+
 });
  
