@@ -1355,7 +1355,7 @@
       .pickmeup .pmu-instance nav .pmu-prev,
       .pickmeup .pmu-instance nav .pmu-next {
         display: none;
-        height: 30px;
+        height: 35px;
         width: 24px;
         position: relative; }
         .pickmeup .pmu-instance nav .pmu-prev:before,
