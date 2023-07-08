@@ -3,6 +3,7 @@
 @import 'variables.scss';
 @import 'page.scss';
 @import 'pages.scss';
+@import 'pickmeup.scss';
 
 
 /*Reset
@@ -62,6 +63,18 @@ body.hidden {
 	position: relative;
 	overflow: hidden;
 	background-color: $wh;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	.main {
+		flex: 1 1 auto;
+		&.center {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 }
 
 .section {
@@ -210,6 +223,33 @@ body.hidden {
 	}
 }
 
+.link {
+		display: inline-block;
+		font-family: $ff;
+		font-size: 14px;
+		font-weight: 700;
+		color: $dblue;
+		text-transform: uppercase;
+		position: relative;
+		&:after {
+			content: "";
+			width: 20px;
+			height: 20px;
+			background: url("../images/right-small-up.svg") center no-repeat;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			z-index: 1;
+			transform: translate(100%, -50%);
+			transition: all .2s linear;
+		}
+		&:hover {
+			&:after {
+				transform: translate(100%, -50%) rotate(45deg);
+			}
+		}
+}
+
 .photo {
 	img {
 		width: 100%;
@@ -217,6 +257,10 @@ body.hidden {
 		object-fit: cover;
 		border-radius: 8px;
 	}
+}
+
+.mb-8 {
+	margin-bottom: 8px;
 }
 
 .mb-16 {
@@ -229,6 +273,10 @@ body.hidden {
 
 .mt-8 {
 	margin-top: 8px;
+}
+
+.mt-16 {
+	margin-top: 16px;
 }
 
 .mt-24 {
@@ -249,10 +297,6 @@ body.hidden {
 		width: 32px;
 		flex: 0 0 32px;
 		margin-right: 16px;
-	}
-	a {
-		color: $bl;
-		font-weight: 700;
 	}
 	&__content {
 		width: 100%;
@@ -302,8 +346,7 @@ body.hidden {
 				border-radius: 50%;
 				background-color: $dblue;
 				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
+				top: 12px;
 				left: -16px;
 				z-index: 1;
 			}
@@ -713,23 +756,34 @@ body.hidden {
 .faq {
 	&.bg-dblue {
 		padding: 64px 0;
-
-	}
-	.title_main {
-		color: $wh;
-		margin-bottom: 40px;
-		text-align: center;
+		.title_main {
+			color: $wh;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		.faq__item {
+			margin: 0 auto 16px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.faq__question {
+			font-weight: 700;
+		}
 	}
 	&__item {
 		padding: 24px;
 		background-color: $wh;
 		border-radius: 8px;
-		margin: 0 144px 16px;
+		margin: 0 0 16px;
+		border: 1px solid $lgray2;
+		max-width: 832px;
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
 	&__question {
+		font-weight: 500;
 		position: relative;
 		padding-right: 32px;
 		cursor: pointer;
@@ -780,14 +834,12 @@ body.hidden {
 	}
 	&__column {
 		width: calc(31.1% + 55px);
-		//width: 36.3%;
 		margin-left: -55px;
 		display: flex;
 		flex-wrap: wrap;
 	}
 	&__photo {
 		width: 37.8%;
-		//width: 27.4%;
 		padding: 0 32px;
 		img {
 			max-width: 100%;
@@ -877,6 +929,15 @@ body.hidden {
 			font-size: 16px;
 		}
 	}
+	.list {
+		&_dots {
+			li {
+				&:after {
+					top: 10px;
+				}
+			}
+		}
+	}
 	.intro {
 		&__subtitle {
 			font-size: 16px;
@@ -940,8 +1001,17 @@ body.hidden {
 		}
 	}
 	.faq {
+		&.bg-dblue {
+			.faq__item {
+				max-width: 832px;
+			}
+			.faq__question {
+				font-weight: 500;
+			}
+		}
 		&__item {
-			margin: 0 48px 16px;
+			margin: 0 0 16px;
+			max-width: 100%;
 		}
 	}
 	.partner {
@@ -1106,6 +1176,15 @@ body.hidden {
 	.text {
 		&_big {
 			font-size: 14px;
+		}
+	}
+	.list {
+		&_dots {
+			li {
+				&:after {
+					top: 8px;
+				}
+			}
 		}
 	}
 	.intro {
