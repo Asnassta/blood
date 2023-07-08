@@ -1346,20 +1346,22 @@
       display: -ms-flexbox;
       display: -webkit-flex;
       display: -webkit-box;
-      display: flex; }
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
       .pickmeup .pmu-instance nav *:first-child :hover {
         color: #88c5eb; }
       .pickmeup .pmu-instance nav .pmu-prev,
       .pickmeup .pmu-instance nav .pmu-next {
         display: none;
-        height: 24px;
+        height: 30px;
         width: 24px;
-        background: url("../images/arrow-tiny.svg"), #fff;
         position: relative; }
         .pickmeup .pmu-instance nav .pmu-prev:before,
         .pickmeup .pmu-instance nav .pmu-next:before {
           content: "";
-          background: url("../images/arrow-tiny.svg"), #fff;
+          background: url("../images/arrow-tiny.svg") center no-repeat, #fff;
           height: 24px;
           width: 24px;
           position: absolute;
@@ -1377,10 +1379,11 @@
       .pickmeup .pmu-instance nav .pmu-next {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-        order: 2;
-        -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        transform: rotate(180deg); }
+        order: 2; }
+        .pickmeup .pmu-instance nav .pmu-next:before {
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
       .pickmeup .pmu-instance nav .pmu-month {
         width: 100%;
         -webkit-box-flex: 1;

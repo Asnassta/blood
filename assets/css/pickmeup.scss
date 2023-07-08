@@ -98,6 +98,7 @@ $today-color                      : $color-hover !default;
 			display     : -ms-flexbox;
 			display     : -webkit-flex;
 			display     : flex;
+			align-items: center;
 			*:first-child :hover {
 				color : $nav-color-hover;
 			}
@@ -105,13 +106,12 @@ $today-color                      : $color-hover !default;
 			.pmu-prev,
 			.pmu-next {
 				display : none;
-				height  : 24px;
+				height  : 30px;
 				width   : 24px;
-				background: url("../images/arrow-tiny.svg"), #fff;
 				position: relative;
 				&:before {
 					content: "";
-					background: url("../images/arrow-tiny.svg"), #fff;
+					background: url("../images/arrow-tiny.svg") center no-repeat, #fff;
 					height  : 24px;
 					width   : 24px;
 					position: absolute;
@@ -129,7 +129,9 @@ $today-color                      : $color-hover !default;
 			}
 			.pmu-next {
 				order: 2;
-				transform: rotate(180deg);
+				&:before {
+					transform: rotate(180deg);
+				}
 			}
 			.pmu-month {
 				width : 100%;
